@@ -35,6 +35,7 @@
 #ifdef DEFYPLUS
 # define PROX_DEVICE "light-prox"
 # define ISL_DEVICE  "light-prox"
+# warning Building for Defy+ light-prox
 #else
 # define PROX_DEVICE "proximity"
 # define ISL_DEVICE  "als"

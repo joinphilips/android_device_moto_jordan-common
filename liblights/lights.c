@@ -150,7 +150,7 @@ set_light_buttons(struct light_device_t* dev,
 
     if (brightness > 0) {
         char prop[PROPERTY_VALUE_MAX];
-        if (property_get("persist.sys.button_brightness", prop, NULL)) {
+        if (property_get("persist.sys.button_brightness", prop, "100")) {
             int button_brightness_scale = atoi(prop);
             if (button_brightness_scale == 0) {
                 brightness = 0;

@@ -83,7 +83,7 @@ static const struct sensor_t sSensorList[] = {
     { "ISL29030 Light Sensor",
         "Intersil Corporation",
         1, SENSORS_HANDLE_BASE + SENSOR_TYPE_LIGHT, SENSOR_TYPE_LIGHT,
-        8192.0f, 1.0f, 0.5f, 0, { } },
+        4096.0f+8192.0f, 1.0f, 0.5f, 0, { } },
 };
 
 /*****************************************************************************/
