@@ -11,11 +11,14 @@ Add to your repo manifest \<project path="kernel/moto/mb525" name="CyanogenDefy/
 
 "repo sync" and then, in root of your android repo :
 
+    croot
     . build/envsetup.sh
-    breakfast jordan
-    
+    breakfast mb525
+
+    make kernel_config
     make kernel
-    make device_modules
+    make device_module
+    make kernel_install
 
 ---
 

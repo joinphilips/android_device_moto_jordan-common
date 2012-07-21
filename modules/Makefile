@@ -55,3 +55,11 @@ modules:
 	@find $(PWD) | grep "\\.order$$" | xargs rm -f
 	@find $(PWD) | grep "\\.tmp_versions$$" | xargs rm -rf
 
+device_modules:
+	@echo YOU ARE NOT AT THE GOOD PLACE TO DO THAT ! go to repo root and copy/paste that :
+	@echo
+	@echo croot
+	@echo . build/envsetup.sh
+	@echo bib mb525
+	@echo make device_modules
+
