@@ -61,16 +61,11 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PREBUILT)/etc/location.cfg:system/etc/location.cfg \
 	$(DEVICE_PREBUILT)/etc/media_codecs.xml:system/etc/media_codecs.xml \
 	$(DEVICE_PREBUILT)/etc/audio_policy.conf:system/etc/audio_policy.conf \
-	device/moto/jordan-common/vold.fstab:system/etc/vold.fstab \
-	device/moto/jordan-common/media_profiles.xml:system/etc/media_profiles.xml \
-	device/moto/jordan-common/modules/modules.alias:system/lib/modules/modules.alias \
-	device/moto/jordan-common/modules/modules.dep:system/lib/modules/modules.dep \
 
 # New CM9 backup list system (addon.d)
 PRODUCT_COPY_FILES += \
 	${device_path}/releasetools/addon.d/60-baseband.sh:system/addon.d/60-baseband.sh \
 	${device_path}/releasetools/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
-	${device_path}/releasetools/addon.d/70-multiboot.sh:system/addon.d/70-multiboot.sh \
 
 # Backup kernel modules and bootmenu overclock config
 ifndef CM_RELEASE
