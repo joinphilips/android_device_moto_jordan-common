@@ -12,6 +12,10 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE:= audio_policy.jordan
 LOCAL_MODULE_TAGS := optional
 
+ifeq ($(BOARD_USES_AUDIO_LEGACY),true)
+  LOCAL_CFLAGS += -DUSES_AUDIO_LEGACY -DICS_AUDIO_BLOB -DMISSING_PARAMS
+endif
+
 ifeq ($(BOARD_HAVE_BLUETOOTH),true)
   LOCAL_CFLAGS += -DWITH_A2DP
 endif
@@ -39,6 +43,7 @@ LOCAL_WHOLE_STATIC_LIBRARIES := \
     libaudiohw_legacy
 include $(BUILD_SHARED_LIBRARY)
 
-endif
 endif #BOARD_USES_AUDIO_LEGACY
+
+endif # jordan
 

@@ -87,5 +87,11 @@ AudioPolicyManagerBase::routing_strategy AudioPolicyManager::getStrategy(
     }
 }
 
+#ifndef ICS_AUDIO_BLOB
+extern "C" status_t getMasterVolume(float* volume) {
+	ALOGW("%s: *** stub ***", __FUNCTION__);
+	return 0;
+}
+#endif
 
 }; // namespace android_audio_legacy
