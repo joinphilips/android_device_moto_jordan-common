@@ -16,7 +16,7 @@
 
 
 #define LOG_TAG "lights"
-
+//#define LOG_NDEBUG 0
 #include <cutils/log.h>
 #include <cutils/properties.h>
 
@@ -86,8 +86,10 @@ write_int(char const* path, int value)
         char buffer[20];
         int bytes = sprintf(buffer, "%d\n", value);
         int amt = write(fd, buffer, bytes);
+        int ret = amt == -1 ? -errno : 0;
         close(fd);
-        return amt == -1 ? -errno : 0;
+        ALOGV("%s => %d ret= %d", path, value, ret);
+        return ret;
     } else {
         if (already_warned == 0) {
             ALOGE("write_int failed to open %s\n", path);
@@ -166,11 +168,13 @@ set_light_buttons(struct light_device_t* dev,
         (g_last_button_brightness == 0 && brightness > 0) ||
         (g_last_button_brightness > 0 && brightness == 0))
     {
+        ALOGV("button brightness toggle %d", brightness ? 1 : 0);
         err = write_int(BUTTON_ON_FILE, brightness ? 1 : 0);
     }
 
 //    if (err == 0 && brightness > 0 && brightness != g_last_button_brightness) {
         err = write_int(BUTTON_BRIGHT_FILE, brightness);
+        ALOGV("button brightness= %d ret= %d", brightness, err);
 //    }
 
     g_last_button_brightness = brightness;
