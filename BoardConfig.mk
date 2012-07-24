@@ -125,10 +125,10 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/moto/jordan-common/recovery_keys
 TARGET_RECOVERY_PRE_COMMAND := "/system/bootmenu/script/reboot_command.sh"
 TARGET_RECOVERY_PRE_COMMAND_CLEAR_REASON := true
 
-# FM Radio (not ready in ICS)
+# FM Radio (This method is not compatible, and sucks)
 # BOARD_HAVE_FM_RADIO := true
 # BOARD_FM_DEVICE := wl1271
-COMMON_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+# COMMON_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
 # Egl Specific
 USE_OPENGL_RENDERER := true
