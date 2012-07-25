@@ -44,9 +44,5 @@ protected:
         virtual bool a2dpUsedForSonification() const { return true; }
 #endif
 
-#ifndef ICS_AUDIO_BLOB
-	virtual status_t getMasterVolume(float*);
-#endif
-
 };
 };
