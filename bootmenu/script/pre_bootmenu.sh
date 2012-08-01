@@ -3,6 +3,10 @@
 ######## BootMenu Script
 ######## Execute Pre BootMenu
 
+#We should insmod TLS Module before start bootmenu
+/system/bootmenu/binary/busybox insmod /system/lib/modules/symsearch.ko
+/system/bootmenu/binary/busybox insmod /system/lib/modules/tls-enable.ko
+
 source /system/bootmenu/script/_config.sh
 
 ######## Main Script
@@ -77,9 +81,6 @@ if [ ! -d /cache/recovery ]; then
 fi
 
 mkdir -p /cache/bootmenu
-
-insmod /system/lib/modules/symsearch.ko
-insmod /system/lib/modules/klogger.ko
 
 # load ondemand safe settings to reduce heat and battery use
 if [ -x /system/bootmenu/script/overclock.sh ]; then
