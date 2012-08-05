@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_shortname" translatable="false">Defy Parts</string>
+
+    <string name="app_name">Postavke za Defy</string>
+
+    <string name="general_settings_title">Glavne Postavke</string>
+
+    <string name="charge_led_mode_title">Boja LED svijetla kod punjenja</string>
+    <string name="charge_led_mode_summary">Podesite ponašanje LED svijetla prilikom punjenja baterije</string>
+    <string name="charge_led_mode_white">Bijeli LED</string>
+    <string name="charge_led_mode_rgb">Miješani LED (crevno/zeleno)</string>
+    <string name="charge_led_mode_off">Isključeno</string>
+
+    <string name="button_brightness_scale_title">Svijetlina gumbova</string>
+    <string name="button_brightness_scale_summary">Dopušta smanjenje svijetline gumbova, posebno korisno kada se koristi ručno namještanje svijetline</string>
+
+    <string name="touch_points_title">Multi-touch točke</string>
+    <string name="touch_points_summary">Podesi broj multi-touch točaka koje će sistem registrirati</string>
+    <string name="touch_point_entry_2points">2 točke (zadano)</string>
+    <string name="touch_point_entry_3points">3 točke</string>
+    <string name="touch_point_entry_4points">4 točke</string>
+    <string name="touch_point_entry_5points">5 točaka</string>
+    <string name="touch_point_entry_8points">8 točaka</string>
+
+    <string name="touch_point_warning_title">Upozorenje</string>
+    <string name="touch_point_warning_message">Povećavanje broja multi-touch točaka može smanjiti odaziv ekrana.\nDa li ste sigurni da želite promijeniti postavke?</string>
+
+    <string name="audio_settings_title">Postavke za Zvuk</string>
+    <string name="audio_effects">Audio Efekti i DSP</string>
+
+    <string name="other_settings_title">Druge postavke</string>
+    <string name="compass_calibrate">Kalibracija kompasa</string>
+
+    <string name="baseband_selection">Odabir radija</string>
+
+    <string name="reboot_prompt_title">Morate ponovo pokrenuti sistem</string>
+    <string name="reboot_prompt_message">Kako bi sustav prihvatio promjene, sistem se treba ponovo pokrenuti .\n\nDa li želite ponovo pokrenuti sistem sada?</string>
+    <string name="yes">Da</string>
+    <string name="no">Ne</string>
+
+    <string name="region_europe">Europa</string>
+    <string name="region_america">Amerika</string>
+    <string name="region_asia">Azija</string>
+    <string name="region_africa">Afrika</string>
+    <string name="region_australia">Australija</string>
+
+    <string name="country_central_europe">Centralna Europa</string>
+    <string name="country_france">Francuska</string>
+    <string name="country_great_britain">Velika Britanija</string>
+    <string name="country_italy">Italija</string>
+    <string name="country_poland">Poljska</string>
+    <string name="country_usa">SAD</string>
+    <string name="country_brasil">Brazil</string>
+    <string name="country_argentina">Argentina</string>
+    <string name="country_colombia">Kolumbija</string>
+    <string name="country_china">Kina</string>
+    <string name="country_south_korea">Južna Korea</string>
+    <string name="country_hongkong_taiwan">Hongkong, Tajvan</string>
+    <string name="country_south_east_asia">Jugoistočna Azija</string>
+    <string name="country_arabia">Arabija</string>
+    <string name="country_south_africa">Južna Afrika</string>
+
+    <string name="baseband_selection_summary">Odaberite radio koji je prikladan za vašu zemlju\nTrenutno odabrano: %1$s %2$s</string>
+    <string name="baseband_region">Regija</string>
+    <string name="baseband_country">Zemlja</string>
+    <string name="baseband_version">Verzija</string>
+    <string name="baseband_frequencies">Frekvencijski raspon: %1$s MHz</string>
+    <string name="unknown">Nepoznato</string>
+</resources>
