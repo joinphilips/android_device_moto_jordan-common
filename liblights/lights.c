@@ -44,7 +44,7 @@
 #define CHARGE_LED_RGB   1
 #define CHARGE_LED_WHITE 2
 
-#define HAVE_KEYBOARD   0
+//#define HAVE_KEYBOARD
 
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
 static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
