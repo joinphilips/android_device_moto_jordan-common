@@ -214,12 +214,13 @@ set_ioscheduler()
       iosched="sio"
   fi
 
+  insmod $MODULE_DIR/sio_iosched.ko
+
   # options: 'noop cfq sio'
   case "$iosched" in
     "cfq" )
     ;;
     "sio" )
-      insmod $MODULE_DIR/sio_iosched.ko
       for i in /sys/block/mmc*/queue; do
         [ -f "$i/scheduler" ]                 && echo $iosched > $i/scheduler
 
