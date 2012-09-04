@@ -255,10 +255,12 @@ static void processPreviewData(char *frame, size_t size, legacy_camera_device *l
         return;
     }
 
+/* only required for TI DDK gralloc < 1.10
+
     if (stride != lcdev->previewWidth) {
         ALOGE("%s: stride=%d doesn't equal width=%d", __FUNCTION__, stride, lcdev->previewWidth);
     }
-
+*/
     ret = lcdev->window->lock_buffer(lcdev->window, bufHandle);
     if (ret != NO_ERROR) {
         ALOGE("%s: ERROR locking the buffer\n", __FUNCTION__);
