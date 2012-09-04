@@ -56,12 +56,9 @@ WIFI_FIRMWARE_LOADER        := wlan_loader
 PRODUCT_WIRELESS_TOOLS      := true
 BOARD_SOFTAP_DEVICE         := wl1271
 AP_CONFIG_DRIVER_WILINK     := true
-AP_CONFIG_IEEE80211N        := true
 WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/fw_tiwlan_ap.bin"
 WPA_SUPPL_APPROX_USE_RSSI   := true
 WPA_SUPPL_WITH_SIGNAL_POLL  := false
-USES_TI_MAC80211            := true
-# CM9
 WIFI_DRIVER_LOADER_DELAY    := 200000
 WIFI_AP_DRIVER_MODULE_PATH  := "/system/lib/modules/tiap_drv.ko"
 WIFI_AP_DRIVER_MODULE_NAME  := tiap_drv
@@ -72,6 +69,8 @@ BOARD_HOSTAPD_NO_ENTROPY    := true
 BOARD_HOSTAPD_DRIVER        := true
 BOARD_HOSTAPD_DRIVER_NAME   := wilink
 #BOARD_HOSTAPD_TIAP_ROOT     := system/wlan/ti/WiLink_AP
+#USES_TI_MAC80211            := true
+#AP_CONFIG_IEEE80211N        := true
 
 # Netfilter
 #BOARD_WITHOUT_IPV6_QUOTA := true
